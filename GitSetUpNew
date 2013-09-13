@@ -20,3 +20,18 @@ Accidental deletion??  One or many files??
 First do git ls-files -d   for list deleted files.
 then do 
 		git ls_files -d | xargs git checkout -- pipes the deleted to checkout.
+
+NOW THE REST OF THE SETUP:
+
+	git config --global user.name "John Doe"
+	git config --global user.email johndoe@example.com
+	git config --global core.editor gedit  (until I get up to speed on GVim)
+	git config --global merge.tool vimdiff
+	git config --global credential.helper cache
+	git config --global credential.helper 'cache --timeout=3600'
+	git remote add origin https://github.com/beaucoder/first_app.git
+	git config --global push.default simple
+	git update-server-info
+	git push -u orgin master
+	
+	
