@@ -15,4 +15,8 @@ Setting up a new repo.
 
 Phew!!!  Finally getting there!!.
 
+Accidental deletion??  One or many files??
 
+First do git ls-files -d   for list deleted files.
+then do 
+		git ls_files -d | xargs git checkout -- pipes the deleted to checkout.
