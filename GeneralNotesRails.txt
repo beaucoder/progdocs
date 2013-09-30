@@ -1,0 +1,15 @@
+The Rails Docs general notes.
+
+
+2013-09-09 Interesting Note.
+
+gitg via USC          0.2.5-1~exp0      i386  git repository viewer
+Unstable!! Crashes
+gitg via Debian org   0.2.4-1.1+deb7u1  i386  git repository viewer for gtk+/GNOME
+Stable (so far) no spontaneous crashes.
+
+Setting up mhartl's Web Development tut:
+
+2013-09-09 Install gitg from Debian Wheezy cuz USC version always crashed.
+2013-09-09 Installed Debian Wheezy Markdown.
+

@@ -1,0 +1,161 @@
+Git Usage:
+
+NORMAL SETUP:   (Following Scott Chacon's git --fast-version-control)
+
+1. Install git.
+2. git config --global user.name "John Doe"
+	 git config --global user.email johndoe@example.com
+	 git config --global core.editor gedit  (until I get up to speed on GVim)
+	 git config --global merge.tool vimdiff
+
+3. Check what I have done: 	
+
+git config --list
+	user.name=beaucoder	
+	user.email=beaucoder@gmail.com
+	user.mail=beaucoder@gmail.com
+	core.editor=gvim -f
+	credential.helper=cache --timeout=3600
+	push.default=simple
+	merge.tool=vimdiff
+	core.repositoryformatversion=0
+	core.filemode=true
+	core.bare=false
+	core.logallrefupdates=true
+
+4. 	git init     @ project's folder  << PLEASE NOTE !!
+
+		This will set up the .git folder in the project directory
+		
+If files already exist:
+		git add *.c
+		git add README    (To add a SPECIFIC file.)
+		git commit -m 'initial project version'
+	We are now ready to use git with our project files.
+ELSE
+		git clone git://github.com/<username>/<repo-name>.git
+	This will clone the repository DOWN TO MY LOCAL FOLDER in <repo-name>
+		from the remote github repo.
+
+	Please note: If the file is NEW, it HAS to be added: git add .
+	Then committed:  git commit -m "Message goes here."
+		OR git commit -a  
+				-a -->  -a, --all
+           Tell the command to automatically stage files that have been modified
+           and deleted, but new files you have not told git about are not
+           affected. For these do git add .
+
+I can check status BEFORE & AFTER the git add or git add .  and I well see
+	how the staging / commit is changing.
+
+PLEASE NOTE!!  if I modify a file after I run git add, I have to run git add again to stage the latest version of the file. 
+
+That is: Add after every change!!!
+
+5. Checking the status of my Git files:
+	
+	git status   and   git status -s for short version.
+
+6. git diff  --> will show me the ACTUAL INDIVIDUAL changes. (Kewl!!)
+								 - puts "hello worls"
+								 + puts "hola mundo"
+	 git diff --cached --> will show STAGED changes, ready for next commit.
+
+7. git diff HEAD  --> will show ALL staged or unstaged changes.
+
+8. git diff --stat --> less than full diff --cached. Summary of changes.
+
+REVIEW: Normal git usage for changes.
+	a. git add "index.html.erb"		Add the file, stage for commit.
+	b. git status									See what will be committed.
+	c. git ccommit -m "Message for commit."  Commit the changes.
+	d. git status  	Show the results / changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+First Attempt - A bit disjointed.
+
+1. Add 				files:  git add .    '.' means current dir or project
+2. Commit			files:  git commit -m "message goes here"  -m = description
+3. Log				see commit messages in log.
+4. Set up origin and push:
+	a. git remote add origin https://github.com/<username>/first_app.git
+			Do this AT THE RAILS PROJECT folder!!
+	b. git push -u origin master
+
+	c. git remote add origin https://github.com/<username>/first_app.git
+			To make first_app the origin of the files.
+			Do this @ Project Folder!!
+5. ADD & Commit		git commit -a -m "Message goes here."
+			BUT!!! STILL HAVE TO USE git add . FIRST!!!
+6. Push				git push   (simple vs git push origin master)
+
+7. How to add to repository
+	a. Go to folder where the file is.
+	b. Change it and save it.
+	c. Clone the repo: git clone ~/RubyOnRails/first_app (ONLY USED FIRST TIME!!)
+	d. git add <filename>  OR  git add .  --> all files chgd here.
+	e. git commit -m 'GitUsage.txt'
+	f. git push origin master
+	g. git show  -->  To show the MOST RECENT COMMIT. 
+
+	Be patient!! It sometimes takes a few minutes for chgs to get updated @ GitHub
+
+8. git branch <newbranch>     Creates a new branch
+	 git checkout <newbranch>  	This switches focus to the new branch.
+	 git checkout master				And so on.
+
+9. git commit -a -m "Some Message"  Commits all mods of EXISTING file(s).  	 	 		 		 				 New files still have to added to the repo via 'git add .'.
+

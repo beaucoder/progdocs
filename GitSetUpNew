@@ -1,0 +1,37 @@
+Setting up a new repo.
+
+1. Got to github.com
+2. Setup the new repo: here progdocs.
+3. Set up the new folder. Here SysProgDocs/progdocs
+4. Go to the folder
+3. Paste or create new docs.
+4. git clone git://github.com/beaucoder/progdocs.git
+5. git add .
+6. git commit -m "Initial progdocs for Rails & Git."
+7. git remote add progdocs https://github.com/beaucoder/progdocs.git
+8. git push --set-upstream progdocs master
+9. git staus  -- should now be clean.
+10. Going to GitHub progdocs should correctly show all commits.
+
+Phew!!!  Finally getting there!!.
+
+Accidental deletion??  One or many files??
+
+First do git ls-files -d   for list deleted files.
+then do 
+		git ls_files -d | xargs git checkout -- pipes the deleted to checkout.
+
+NOW THE REST OF THE SETUP:
+
+	git config --global user.name "John Doe"
+	git config --global user.email johndoe@example.com
+	git config --global core.editor gedit  (until I get up to speed on GVim)
+	git config --global merge.tool vimdiff
+	git config --global credential.helper cache
+	git config --global credential.helper 'cache --timeout=3600'
+	git remote add origin https://github.com/beaucoder/first_app.git
+	git config --global push.default simple
+	git update-server-info
+	git push -u orgin master
+	
+	
