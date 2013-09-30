@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  indate: 2013-09-30
+  greet: MyString
+  first: MyString
+  middle: MyString
+  last: MyString
+  suffix: MyString
+  gender: MyString
+  keycode: MyString
+  status: MyString
+  available: MyString
+  skilllvl: MyString
+  speed: MyString
+  bestat: MyString
+  addr1: MyString
+  addr2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  cellphn: MyString
+  homephn: MyString
+  workphn: MyString
+  otherphn: MyString
+  emergencyphn: MyString
+  emergcontact: MyString
+  notes: MyText
+
+two:
+  indate: 2013-09-30
+  greet: MyString
+  first: MyString
+  middle: MyString
+  last: MyString
+  suffix: MyString
+  gender: MyString
+  keycode: MyString
+  status: MyString
+  available: MyString
+  skilllvl: MyString
+  speed: MyString
+  bestat: MyString
+  addr1: MyString
+  addr2: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  cellphn: MyString
+  homephn: MyString
+  workphn: MyString
+  otherphn: MyString
+  emergencyphn: MyString
+  emergcontact: MyString
+  notes: MyText
